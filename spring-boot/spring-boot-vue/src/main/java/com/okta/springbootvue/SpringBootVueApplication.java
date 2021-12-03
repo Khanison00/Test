@@ -45,24 +45,24 @@ public class SpringBootVueApplication {
 			});
 			
 
-			Object[][] empl = new Object[][] { 
-				{ "AAA", "AAA", 1 , 50000.00 , 0.00}
-			};
-			for (int i = 0; i < empl.length; i++) {
-				Employee newemp = new Employee();
-				newemp.setFirstname((String) empl[i][0]);
-				newemp.setLastname((String) empl[i][1]);
-				newemp.setSalary((Double) empl[i][3]);
-				newemp.setCompentsation((Double) empl[i][4]);
-			//	newemp.setEBDate((Date) empl[i][2]);
+			// Object[][] empl = new Object[][] { 
+			// 	{ "AAA", "AAA", 1 , 50000.00 , 0.00}
+			// };
+			// for (int i = 0; i < empl.length; i++) {
+			// 	Employee newemp = new Employee();
+			// 	newemp.setFirstname((String) empl[i][0]);
+			// 	newemp.setLastname((String) empl[i][1]);
+			// 	newemp.setSalary((Double) empl[i][3]);
+			// 	newemp.setCompentsation((Double) empl[i][4]);
+			// //	newemp.setEBDate((Date) empl[i][2]);
 				
-				EmployeeType etype = emptypeRepository.findById((int) empl[i][2]);
+			// 	EmployeeType etype = emptypeRepository.findById((int) empl[i][2]);
 				
-				newemp.setEmpType(etype);
+			// 	newemp.setEmpType(etype);
 				
 
-				emp.save(newemp);
-			}
+			// 	emp.save(newemp);
+			// }
 
 		};
 	};
