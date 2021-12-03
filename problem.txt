@@ -1,0 +1,1 @@
+ติดปัญหา Front-end ใช้  Http service ไม่ได้
